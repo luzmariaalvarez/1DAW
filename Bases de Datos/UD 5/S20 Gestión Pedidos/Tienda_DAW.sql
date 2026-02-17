@@ -106,8 +106,12 @@ INSERT INTO pedidos (id_pedido, id_cliente, fecha, estado, total) VALUES
 (502,2,'2024-05-12','ENVIADO',129.00),
 (503,3,'2024-05-13','CANCELADO',39.90);
 
-s
-
+INSERT INTO lineas_pedido (id_pedido, id_producto, cantidad, precio_unitario) VALUES
+(500,100,1,79.90),
+(500,101,1,39.90),
+(501,102,1,89.00),
+(502,103,1,129.00),
+(503,101,1,39.90);
 
 
 
