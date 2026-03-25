@@ -1,8 +1,5 @@
--- SQL completo para MySQL 8+
--- Sesión 17y 18: DCL (usuarios, roles y permisos)
--- Base de datos de práctica: clinica_seguridad
--- Incluye: esquema, datos, usuarios, roles, privilegios y pruebas
 
+-- Sesión 23-24: DCL (usuarios, roles y permisos)
 
 
 -- CREACIÓN DE LA BASE DE DATOS Y TABLAS
@@ -239,6 +236,7 @@ GRANT UPDATE ON clinica_seguridad.citas TO 'rol_recepcion';
 -- Quitar el rol médico al usuario medico2.
 REVOKE 'rol_medico' FROM 'medico2'@'%';
 SHOW GRANTS FOR 'medico2'@'%';
+
 
 -- Volver a asignarlo.
 GRANT 'rol_medico' TO 'medico2'@'%';
